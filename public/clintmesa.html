@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1280" />
+  <title>TESDA Profile – Christian Dulay Danila</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 1280px;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    .page {
+      width: 100%;
+      padding: 40px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* ── PROFILE CARD ── */
+    .profile-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+
+    .profile-header {
+      background: #d6eaf8;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1a5276;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .profile-body {
+      padding: 6px 0;
+    }
+
+    .info-row {
+      display: flex;
+      padding: 11px 28px;
+      border-bottom: 1px solid #eaecee;
+      align-items: center;
+    }
+
+    .info-row:last-child { border-bottom: none; }
+
+    .info-label {
+      width: 220px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #222;
+      flex-shrink: 0;
+    }
+
+    .info-value {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ── TABS + TABLE CARD ── */
+    .table-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      padding: 0 12px;
+      gap: 4px;
+    }
+
+    .tab {
+      padding: 12px 18px;
+      font-size: 14px;
+      color: #2980b9;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .tab.active {
+      color: #333;
+      font-weight: 500;
+      border: 1px solid #ddd;
+      border-bottom: 1px solid #fff;
+      border-radius: 4px 4px 0 0;
+      background: #fff;
+      margin-bottom: -1px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead tr { background: #fafafa; }
+
+    th {
+      text-align: left;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #222;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td {
+      padding: 18px 24px;
+      font-size: 14px;
+      color: #444;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+
+    .result-text {
+      color: #c0392b;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-header">
+        <span class="profile-name">&#128100; CHRISTIAN DULAY DANILA</span>
+      </div>
+      <div class="profile-body">
+        <div class="info-row">
+          <span class="info-label">Date of Birth</span>
+          <span class="info-value">7/3/2008</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Sex:</span>
+          <span class="info-value">Male</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Nationality:</span>
+          <span class="info-value">Filipino</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Birthplace:</span>
+          <span class="info-value">Kabasalan, Zamboanga Sibugay</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs + Table -->
+    <div class="table-card">
+      <div class="tabs">
+        <button class="tab">Training</button>
+        <button class="tab active">Assessment</button>
+        <button class="tab">Renewal</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Province</th>
+            <th>Assessment Center</th>
+            <th>Qualification</th>
+            <th>Schedule</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Region XII -<br>SOCCSKSARGEN</td>
+            <td>South<br>Cotabato</td>
+            <td>B.E.S.T. COLLEGE<br>OF POLOMOLOK,<br>INC.</td>
+            <td>Computer Systems<br>Servicing NC II</td>
+            <td>3/14/2026</td>
+            <td>
+              <span class="result-text">Assessment<br>Result :<br>Competent</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>
